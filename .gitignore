@@ -3,3 +3,5 @@ tsvenv
 /tsvenv/
 
 **/__pycache__/
+
+**/.DS_Store

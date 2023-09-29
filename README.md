@@ -56,7 +56,7 @@ To run a simulation that consumes the `tgen`-traces generated in the previous st
 
 To run a simulation that consumes the `tgen`-traces generated in the previous step and runs `APE` traffic shaping strategy on them (inherently bi-directional perspective as per the defense's design), run `src/simpy_tgen_bidirectional/main_ape.py`, compute overheads using `overheads_APE.py` and visualize using `src/notebooks/ape_loopix_bidirectional.ipynb`.
 
-## Additional experiment: idle time in tgen & validation of pure SimPy approach
+## Additional experiment: idle time in `tgen` & validation of pure `SimPy` approach
 
 In an additional experiment, we gauge the amount of time Tor clients spend idle with no streams associated with them that are actively generating data (because `LOOPIX` is designed to provide un-observability, idle time requires having to continously generate cover traffic, resulting in a high overhead in terms of bytes).
 
