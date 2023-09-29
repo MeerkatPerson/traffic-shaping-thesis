@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="markovmodelseed" attr.type="string" for="node" id="d9" />
+  <key attr.name="flowmodelpath" attr.type="string" for="node" id="d8" />
+  <key attr.name="streammodelpath" attr.type="string" for="node" id="d7" />
+  <key attr.name="packetmodelpath" attr.type="string" for="node" id="d6" />
+  <key attr.name="recvsize" attr.type="string" for="node" id="d5" />
+  <key attr.name="sendsize" attr.type="string" for="node" id="d4" />
+  <key attr.name="count" attr.type="string" for="node" id="d3" />
+  <key attr.name="peers" attr.type="string" for="node" id="d2" />
+  <key attr.name="heartbeat" attr.type="string" for="node" id="d1" />
+  <key attr.name="loglevel" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="start">
+      <data key="d0">message</data>
+      <data key="d1">1 second</data>
+      <data key="d2">localhost:8888</data>
+    </node>
+    <node id="end">
+      <data key="d3">1</data>
+    </node>
+    <node id="traffic">
+      <data key="d4">1 kib</data>
+      <data key="d5">1 mib</data>
+      <data key="d6">nonstop.packetmodel.graphml</data>
+      <data key="d7">nonstop.streammodel.graphml</data>
+      <data key="d8">nonstop.flowmodel.graphml</data>
+      <data key="d9">12345</data>
+    </node>
+    <edge source="start" target="traffic" />
+    <edge source="end" target="start" />
+    <edge source="traffic" target="end" />
+  </graph>
+</graphml>

@@ -1,0 +1,5 @@
+tsvenv
+/tsvenv
+/tsvenv/
+
+**/__pycache__/
